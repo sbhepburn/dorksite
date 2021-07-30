@@ -1,10 +1,18 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
     box-sizing: border-box;
     margin: auto;
   }
 
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #FFFFFF;
 }
 
@@ -13,10 +21,12 @@ div.topnav{
     justify-content: space-between;
     background-color:#FBA90A;
     /* margin: 2em; */
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     padding-left: 1em;
     padding-right: 1em;
+    /* position: fixed; */
+    
 
 }
 
@@ -72,6 +82,10 @@ div.intro{
     /* border: solid red; */
 }
 
+div.intro-item{
+    text-align: center;
+}
+
 div.intro-item i{
     background: -webkit-linear-gradient(rgb(226, 162, 24), rgb(121, 34, 99));
     -webkit-background-clip: text;
@@ -80,10 +94,10 @@ div.intro-item i{
 }
 
 div.intro h1{
-    
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: flex-end;
+    align-items: center;    
+    /* align-items: flex-end; */
+    /* align-content: flex-end; */
+    /* justify-content: flex-end; */
     color: #FFFFFF;
     /* border: solid red; */
 
@@ -96,6 +110,7 @@ div.intro i{
 }
 
 div.container{
+    background-color: #eff4f7;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -140,9 +155,14 @@ div.footer{
     background-color: #0D1749;
     justify-content: flex-end;
     padding-right: 2em;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 div.footer a{
+    font-size: .75em;
     color: #FDCE6F;
     text-decoration: none;
 }
